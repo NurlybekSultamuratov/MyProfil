@@ -1,0 +1,26 @@
+{
+  "name": "resume-portfolio-website",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "cookie-parser": "^1.4.7",
+    "debug": "^4.3.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.7",
+    "@types/debug": "^4.1.12",
+    "@types/ejs": "^3.1.5",
+    "@types/express": "^5.0.0",
+    "@types/http-errors": "^2.0.4",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.8.1"
+  }
+}
