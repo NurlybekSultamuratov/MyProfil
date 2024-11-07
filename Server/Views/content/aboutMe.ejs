@@ -2,30 +2,31 @@
 <%- include('../partials/navbar.ejs') %>
 
 <!-- Main content -->
-<div class="container mt-4">
+<div class="container mt-4 text-center">
     <img src="/Assets/images/photo.jpg" width="400" height="400" alt="Profile Photo" class="img-fluid">
     <h3 class="font-georgia mt-4"><b>Sultamuratov Nurlybek</b></h3>
 
-    <!-- LinkedIn Link -->
-   <a href="https://www.linkedin.com/in/nurlybek-sultamuratov-67a9551b8" target="_blank" >
-      <i class="fab fa-linkedin fa-lg"></i> LinkedIn Profile
-   </a> 
-    
-    <!--Resume Link-->   
-   <br><i class="fa-sharp fa-solid fa-file"></i>
-   <a href="/Assets/images/nurbek resume.pdf"  target="_blank" class="btn btn-link">Resume
-   </a>
-    </i>
-    <h3 class="font-georgia mt-4"><b>My Favourite Activities</b></h3>
-    <ul class="font-times">
-        <li>Listening to audiobooks</li>
-        <li>Playing videogames</li>
-        <li>Drinking coffee</li>
-        <li>Editing videos</li>
-        <li>Driving</li>
-        <li>Creating</li>
-    </ul>
+    <!-- Social Links -->
+    <div class="social-links mt-3">
+        <!-- LinkedIn Link -->
+        <a href="https://www.linkedin.com/in/nurlybek-sultamuratov-67a9551b8" target="_blank" class="btn btn-link">
+            <i class="fab fa-linkedin fa-lg"></i> LinkedIn Profile
+        </a>
+
+        <!-- GitHub Link -->
+        <a href="https://github.com/NurlybekSultamuratov?tab=repositories" target="_blank" class="btn btn-link">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+
+        <!-- Resume Link -->
+        <a href="/Assets/images/nurbek resume.pdf" target="_blank" class="btn btn-link">
+            <i class="fa-sharp fa-solid fa-file"></i> Resume
+        </a>
+    </div>
 </div>
+
+
+   
 
 <%- include('../partials/footer.ejs') %>
 
