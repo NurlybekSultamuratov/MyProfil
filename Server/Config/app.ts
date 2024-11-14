@@ -4,9 +4,30 @@ import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import indexRouter from '../Routes/index';
+import mongoose from 'mongoose';
 
+// app config
 const app = express();
 export default app; //exporting as default object for this module
+
+// db config
+import * as DBConfig from "./db";
+
+mongoose.connect(DBConfig.localURI)
+  .then(() => {
+    console.log(`Mongoose connected to MongoDB at: ${DBConfig.localURI}`);
+  })
+  .catch((error) => {
+    console.error("Mongoose connection error:", error);
+  });
+
+const db = mongoose.connection;
+
+// Handle additional connection events
+db.on("disconnected", () => {
+  console.log("Mongoose disconnected from MongoDB.");
+});
+
 // view engine setup
 app.set('views', path.join(__dirname, '../Views'));
 app.set('view engine', 'ejs');
