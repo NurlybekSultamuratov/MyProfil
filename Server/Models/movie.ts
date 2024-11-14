@@ -3,12 +3,15 @@ const Schema = mongoose.Schema;
 const movieSchema = new Schema
 (
     {
-        name: String, // Movie name
-        genre: String, // Movie genre
-        desc: String,  // Movie description
-        director: String, // Movie director
-        releaseYear: Number, // Release year
+        Name: String, // Movie name
+        Genre: String, // Movie genre
+        Desc: String,  // Movie description
+        Director: String, // Movie director
+        ReleaseYear: Number // Release year
 
+    },
+    {
+        collection:"movie"
     }
 );
 
