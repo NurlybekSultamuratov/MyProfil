@@ -4,18 +4,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
+const Controllers_1 = require("../Controllers");
 const router = express_1.default.Router();
 exports.default = router;
-router.get('/', function (req, res, next) {
-    res.render('index', { title: 'Home' });
-});
-router.get('/home', function (req, res, next) {
-    res.render('index', { title: 'Home' });
-});
-router.get('/aboutMe', function (req, res, next) {
-    res.render('content/aboutMe', { title: 'About' });
-});
-router.get('/contactMe', function (req, res, next) {
-    res.render('content/contactMe', { title: 'Contact' });
-});
+router.get('/', Controllers_1.DisplayHomePage);
+router.get('/home', Controllers_1.DisplayHomePage);
+router.get('/aboutMe', Controllers_1.DisplayAboutPage);
+router.get('/contactMe', Controllers_1.DisplayContactPage);
 //# sourceMappingURL=index.js.map
