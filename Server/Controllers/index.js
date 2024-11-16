@@ -10,6 +10,6 @@ function DisplayHomePage(req, res, next) {
     res.render('index', { title: 'Home' });
 }
 function DisplayContactPage(req, res, next) {
-    res.render('content/contactMe', { title: 'Contact' });
+    res.render('content/projects', { title: 'Current Projects' });
 }
 //# sourceMappingURL=index.js.map

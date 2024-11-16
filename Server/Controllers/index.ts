@@ -17,5 +17,5 @@ export function DisplayHomePage(req: Request, res: Response, next: NextFunction)
 
 export function DisplayContactPage(req: Request, res: Response, next: NextFunction): void 
 {
-    res.render('content/contactMe', { title: 'Contact' });
+    res.render('content/projects', { title: 'Current Projects' });
 }

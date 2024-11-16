@@ -10,5 +10,5 @@ exports.default = router;
 router.get('/', Controllers_1.DisplayHomePage);
 router.get('/home', Controllers_1.DisplayHomePage);
 router.get('/aboutMe', Controllers_1.DisplayAboutPage);
-router.get('/contactMe', Controllers_1.DisplayContactPage);
+router.get('/projects', Controllers_1.DisplayContactPage);
 //# sourceMappingURL=index.js.map

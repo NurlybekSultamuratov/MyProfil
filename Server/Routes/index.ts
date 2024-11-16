@@ -15,5 +15,5 @@ router.get('/home', DisplayHomePage);
 router.get('/aboutMe', DisplayAboutPage);
 
 /* GET contact page. */
-router.get('/contactMe', DisplayContactPage);
+router.get('/projects', DisplayContactPage);
 
